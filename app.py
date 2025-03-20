@@ -6,19 +6,19 @@ import base64
 from PIL import Image
 import numpy as np
 
+# Set page configuration - MUST COME FIRST
+st.set_page_config(
+    page_title="Customer Churn Prediction",
+    page_icon="📊",
+    layout="wide"
+)
+
 # Load model
 @st.cache_resource
 def load_model():
     return joblib.load("random_forest_smote_model.joblib")
 
 model = load_model()
-
-# Set page configuration
-st.set_page_config(
-    page_title="Customer Churn Prediction",
-    page_icon="📊",
-    layout="wide"
-)
 
 # Add custom CSS
 def add_bg_from_local(image_file):
