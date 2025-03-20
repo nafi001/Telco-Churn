@@ -2,9 +2,9 @@ import streamlit as st
 import pickle
 import pandas as pd
 import numpy as np
-
+import joblib
 # Load the trained model
-model = pickle.load(open('model.pkl', 'rb'))
+model = joblib.load('model.pkl')
 
 def get_data():
     """Function to retrieve user input from Streamlit UI."""
