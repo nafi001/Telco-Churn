@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import joblib
 # Load the trained model
-model = joblib.load('model.pkl')
+model = joblib.load('random_forest_smote_model.joblib')
 
 def get_data():
     """Function to retrieve user input from Streamlit UI."""
