@@ -176,7 +176,7 @@ To improve the model, we applied **SMOTEENN**, which:
 ## Model Performance After Oversampling
 
 - **F1-score for churners increased significantly** after balancing the dataset.
-- **Random Forest** emerged as one of the best-performing models, showing high accuracy and improved precision/recall for churners.
+- **Decision Tree** emerged as one of the best-performing models, showing high accuracy and improved precision/recall for churners.
 - PCA helped in feature reduction but did not significantly outperform other models.
 
 ---
