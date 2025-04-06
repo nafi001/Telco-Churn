@@ -4,7 +4,3 @@ scikit-learn
 joblib
 numpy
 pillow
-a
-a
-aa
-a
